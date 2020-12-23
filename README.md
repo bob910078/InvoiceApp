@@ -1,4 +1,4 @@
-# 發票 app（暫定）
+# 對對發票（暫定）
 
 [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![Twitter URL](https://img.shields.io/twitter/follow/bob910078?style=social)](https://twitter.com/bob910078)
