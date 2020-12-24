@@ -13,10 +13,9 @@ struct ContentView: View {
         
         if vm.loadingState == .none {
             Button(action: {
-                print("follow")
                 vm.update()
             }) {
-                Text("follow")
+                Text("Tap to load data")
                     .font(.system(size: 30))
                     .background(Color.yellow)
                     .foregroundColor(.red)
