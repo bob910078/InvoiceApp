@@ -323,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Invoice/Invoice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Invoice/Preview Content\"";
 				DEVELOPMENT_TEAM = 9KB772ULPQ;
 				ENABLE_PREVIEWS = YES;
@@ -333,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Blasphemy.Invoicewoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blasphemy.Invoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,6 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Invoice/Invoice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Invoice/Preview Content\"";
 				DEVELOPMENT_TEAM = 9KB772ULPQ;
 				ENABLE_PREVIEWS = YES;
@@ -358,7 +360,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Blasphemy.Invoicewoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Blasphemy.Invoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
