@@ -11,14 +11,14 @@
 ## Check List 
 
 - [x] 申請對獎號碼 API
-- [ ] 相機掃描對發票
-- [ ] 支援 Dynamic Type 設計
+- [x] 支援 iPad 多工畫面 layout 設計
+- [x] 支援 Dynamic Type 設計
 - [ ] 支援 Landscape 設計
 - [ ] 支援 Dark Mode 設計
-- [ ] 支援 iPad 多工畫面 layout 設計
 - [ ] 支援 Accessibility
-- [ ] 傳統發票對獎（使用 OCR 影像辨識）
 - [ ] 設定發票開獎提醒
+- [ ] 相機掃描對發票
+- [ ] 傳統發票對獎（使用 OCR 影像辨識）
 
 ## Log
 
