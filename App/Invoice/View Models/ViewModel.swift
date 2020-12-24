@@ -14,11 +14,29 @@ class ViewModel: ObservableObject {
     @Published var message: String = ""
     @Published var loadingState: LoadingState = .none
     
-    @Published var selectedIndex: Int = 0 {
+    @Published var selectedIndex: Int = 1 {
         didSet {
-            print("---> \(selectedIndex)")
             update()
         }
+    }
+    
+    private var value: PrizeNumbers?
+    
+    var displayModel: [CellViewModel] {
+        guard let value = value else {
+            return [
+                CellViewModel(title: "??元", numbers: ["123", "456"]),
+                CellViewModel(title: "??元", numbers: ["123", "456"]),
+                CellViewModel(title: "??元", numbers: ["123", "456"]),
+                CellViewModel(title: "??元", numbers: ["123", "456"]),
+            ]
+        }
+        return [
+            CellViewModel(title: "1000萬", numbers: value.superPrizeNo),
+            CellViewModel(title: "200萬", numbers: value.spcPrizeNo),
+            CellViewModel(title: "20萬", numbers: value.firstPrizeNo),
+            CellViewModel(title: "200元", numbers: value.sixthPrizeNo),
+        ]
     }
     
     init() {
@@ -43,13 +61,7 @@ class ViewModel: ObservableObject {
                 }
                 
                 self.loadingState = .success
-                self.message = """
-                開獎名單:
-                \(value.superPrizeNo[0])
-                \(value.spcPrizeNo[0])
-                \(value.firstPrizeNo[0])
-                \(value.sixthPrizeNo[0])
-                """
+                self.value = value
             }
             
         }
@@ -66,7 +78,7 @@ class ViewModel: ObservableObject {
                 let value = PrizeNumbers(superPrizeNo: [dataModel.superPrizeNo],
                                          spcPrizeNo: [dataModel.spcPrizeNo],
                                          firstPrizeNo: [dataModel.firstPrizeNo1, dataModel.firstPrizeNo2, dataModel.firstPrizeNo3],
-                                         sixthPrizeNo: [dataModel.sixthPrizeNo1])
+                                         sixthPrizeNo: [dataModel.sixthPrizeNo1, dataModel.sixthPrizeNo2])
                 completion(value)
             }
         }
@@ -80,4 +92,10 @@ enum LoadingState {
     case loading
     case success
     case failed
+}
+
+struct CellViewModel: Identifiable {
+    let id: UUID = UUID()
+    let title: String
+    let numbers: [String]
 }

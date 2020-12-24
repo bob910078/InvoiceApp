@@ -48,12 +48,7 @@ final class InvoiceService {
             return try decoder.decode(InvoiceQryWinningList.self, from: $0)
         }
         
-        print(">>>>>>> request")
         let task = urlSession.dataTask(with: req) { (dataOrNil, responseOrNil, errorOrNil) in
-            if let response = responseOrNil {
-                 print(response)
-                print("response <<<<<<<")
-            }
             if let error = errorOrNil {
                 completion(.failure(error))
                 return

@@ -11,27 +11,27 @@ struct InvoiceView: View {
     @ObservedObject var vm: ViewModel
     var body: some View {
         VStack(spacing: 10) {
-            Text("\(vm.message)")
-//                .font(.largeTitle)
-                .foregroundColor(Color.white)
+            VStack(spacing: 10) {
                 
-//            Text("\(self.weatherVM.humidity)")
-//                .foregroundColor(Color.white)
-//                .opacity(0.7)
-            
-            Picker(selection: $vm.selectedIndex, label: Text("Select")) {
+                Picker(selection: $vm.selectedIndex, label: Text("Select")) {
+                    
+                    Text(vm.segmentItems[0].periodDescription).tag(0).font(.title)
+                    Text(vm.segmentItems[1].periodDescription).tag(1).font(.title)
+                    
+                }.pickerStyle(SegmentedPickerStyle())
                 
-                Text(vm.segmentItems[0].periodDescription).tag(0)
-                Text(vm.segmentItems[1].periodDescription).tag(1)
+                VStack {
+                    ForEach(vm.displayModel) { model in
+                        CellView(model: model)
+                    }
+                }
                 
-            }.pickerStyle(SegmentedPickerStyle())
-            
+            }
+            .padding()
+            .background(Color.gray.opacity(0.2))
+            .clipShape(RoundedRectangle(cornerRadius: 8.0, style: .continuous))
         }
         .padding()
-        .frame(width: 300)
-        .background(Color.blue)
-        .clipShape(RoundedRectangle(cornerRadius: 8.0, style: .continuous))
-    
     }
 }
 
