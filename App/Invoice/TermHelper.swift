@@ -17,13 +17,22 @@ class TermHelper {
         let day = cal.component(.day, from: today)
         
         // 開獎日期
-        let tYer = yer
-        var tMon = (mon.isOdd) ? mon : (mon-1)
+        var tYer = yer
+        var tMon = mon
         let tDay = 25
         
-        if day <= tDay, mon.isOdd {
-            let theday = cal.date(byAdding: .month, value: -2, to: today)!
+        if mon.isOdd {
+            if day <= 25 {
+                let theday = cal.date(byAdding: .month, value: -2, to: today)!
+                tMon = cal.component(.month, from: theday)
+                tYer = cal.component(.year, from: theday)
+            } else {
+                tMon = mon
+            }
+        } else {
+            let theday = cal.date(byAdding: .month, value: -1, to: today)!
             tMon = cal.component(.month, from: theday)
+            tYer = cal.component(.year, from: theday)
         }
         
         let dateString = String(format: "%.3d-%.2d-%.2d", tYer, tMon, tDay)

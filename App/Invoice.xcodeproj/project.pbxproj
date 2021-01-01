@@ -11,6 +11,10 @@
 		C60A99EA2593B3BF00AB4C6B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A99E92593B3BF00AB4C6B /* ErrorView.swift */; };
 		C60A99ED2593B3E400AB4C6B /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A99EC2593B3E400AB4C6B /* InvoiceView.swift */; };
 		C60D45942594C9D20084219D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60D45932594C9D20084219D /* CellView.swift */; };
+		C60E1477259F23560018126D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60E1475259F23560018126D /* Info.plist */; };
+		C60E1478259F23560018126D /* InvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E1476259F23560018126D /* InvoiceTests.swift */; };
+		C60E147C259F23610018126D /* PriceNumberReleaseDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E147B259F23610018126D /* PriceNumberReleaseDateTests.swift */; };
+		C60E147F259F23810018126D /* TermHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C952259392D600BED7D7 /* TermHelper.swift */; };
 		C689C943259392C100BED7D7 /* InvoiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C942259392C100BED7D7 /* InvoiceApp.swift */; };
 		C689C945259392C100BED7D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C944259392C100BED7D7 /* ContentView.swift */; };
 		C689C947259392C100BED7D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C689C946259392C100BED7D7 /* Assets.xcassets */; };
@@ -20,11 +24,25 @@
 		C689C957259392D600BED7D7 /* InvoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C954259392D600BED7D7 /* InvoiceService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C60E146E259F234A0018126D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C689C937259392C100BED7D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C689C93E259392C100BED7D7;
+			remoteInfo = Invoice;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C60A99E62593B26600AB4C6B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C60A99E92593B3BF00AB4C6B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C60A99EC2593B3E400AB4C6B /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 		C60D45932594C9D20084219D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		C60E1469259F234A0018126D /* InvoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60E1475259F23560018126D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60E1476259F23560018126D /* InvoiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceTests.swift; sourceTree = "<group>"; };
+		C60E147B259F23610018126D /* PriceNumberReleaseDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceNumberReleaseDateTests.swift; sourceTree = "<group>"; };
 		C689C93F259392C100BED7D7 /* Invoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C689C942259392C100BED7D7 /* InvoiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApp.swift; sourceTree = "<group>"; };
 		C689C944259392C100BED7D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C60E1466259F234A0018126D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C689C93C259392C100BED7D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,10 +101,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C60E146A259F234A0018126D /* InvoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C60E1475259F23560018126D /* Info.plist */,
+				C60E1476259F23560018126D /* InvoiceTests.swift */,
+				C60E147B259F23610018126D /* PriceNumberReleaseDateTests.swift */,
+			);
+			path = InvoiceTests;
+			sourceTree = "<group>";
+		};
 		C689C936259392C100BED7D7 = {
 			isa = PBXGroup;
 			children = (
 				C689C941259392C100BED7D7 /* Invoice */,
+				C60E146A259F234A0018126D /* InvoiceTests */,
 				C689C940259392C100BED7D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C689C93F259392C100BED7D7 /* Invoice.app */,
+				C60E1469259F234A0018126D /* InvoiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +156,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C60E1468259F234A0018126D /* InvoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C60E1472259F234A0018126D /* Build configuration list for PBXNativeTarget "InvoiceTests" */;
+			buildPhases = (
+				C60E1465259F234A0018126D /* Sources */,
+				C60E1466259F234A0018126D /* Frameworks */,
+				C60E1467259F234A0018126D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C60E146F259F234A0018126D /* PBXTargetDependency */,
+			);
+			name = InvoiceTests;
+			productName = InvoiceTests;
+			productReference = C60E1469259F234A0018126D /* InvoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C689C93E259392C100BED7D7 /* Invoice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C689C94E259392C100BED7D7 /* Build configuration list for PBXNativeTarget "Invoice" */;
@@ -145,6 +200,10 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					C60E1468259F234A0018126D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C689C93E259392C100BED7D7;
+					};
 					C689C93E259392C100BED7D7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -164,11 +223,20 @@
 			projectRoot = "";
 			targets = (
 				C689C93E259392C100BED7D7 /* Invoice */,
+				C60E1468259F234A0018126D /* InvoiceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C60E1467259F234A0018126D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60E1477259F23560018126D /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C689C93D259392C100BED7D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +249,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C60E1465259F234A0018126D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60E147C259F23610018126D /* PriceNumberReleaseDateTests.swift in Sources */,
+				C60E147F259F23810018126D /* TermHelper.swift in Sources */,
+				C60E1478259F23560018126D /* InvoiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C689C93B259392C100BED7D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,7 +277,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C60E146F259F234A0018126D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C689C93E259392C100BED7D7 /* Invoice */;
+			targetProxy = C60E146E259F234A0018126D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C60E1470259F234A0018126D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KB772ULPQ;
+				INFOPLIST_FILE = InvoiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Blasphemy.InvoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invoice.app/Invoice";
+			};
+			name = Debug;
+		};
+		C60E1471259F234A0018126D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KB772ULPQ;
+				INFOPLIST_FILE = InvoiceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Blasphemy.InvoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invoice.app/Invoice";
+			};
+			name = Release;
+		};
 		C689C94C259392C100BED7D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +501,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C60E1472259F234A0018126D /* Build configuration list for PBXNativeTarget "InvoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C60E1470259F234A0018126D /* Debug */,
+				C60E1471259F234A0018126D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C689C93A259392C100BED7D7 /* Build configuration list for PBXProject "Invoice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
